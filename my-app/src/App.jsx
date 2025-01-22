@@ -17,6 +17,10 @@ import Callback from './pages/Callback';
 import AdminLayout from './components/Admin/AdminLayout';
 import AdminOrder from './pages/admin/AdminOrder';
 import Cart from './pages/Cart';
+import LoadMore from './pages/label';
+import UseLayout from './pages/UseLayout';
+import Auth from './store/Auth';
+
 function App() {
   return (
     <>
@@ -36,6 +40,9 @@ function App() {
           <Route path="/debounce" element={<Debounce />} />
           <Route path="/usememo" element={<Usememo />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/label" element={<LoadMore />} />
+          <Route path="/uselayout" element={<UseLayout />} />
+          <Route path="/auth" element={<Auth />} />
           {/* Admin Layout with Nested Routes */}
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="order" element={<AdminOrder />} />
